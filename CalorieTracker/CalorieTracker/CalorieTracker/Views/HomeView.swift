@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  CalorieTracker
 //
 //  Created by ARobbins on 3/28/23.
@@ -7,17 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack {
-            HomeView()
+            Text("Awesome Calorie Tracker")
+            Spacer()
+            
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
