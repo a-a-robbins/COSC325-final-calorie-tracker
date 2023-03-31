@@ -2,23 +2,22 @@
 //  DayCalories.swift
 //  CalorieTracker
 //
-//  Created by ARobbins on 3/28/23.
+//  Created by ARobbins on 3/31/23.
 //
 
 import Foundation
 
 class DayCalories: ObservableObject {
-    @Published var totalCalories: Int
+    @Published var dayCalories: [FoodItem] = []
     
-    init(with checking: Bool) {
-//        if(totalCalories > 0) {
-//            for(totalCalories.length) {
-//                totalCalories = totalCalories[$0] + totalCalories
-//            }
-//        }
-        totalCalories = 100
+    let id = UUID()
+    let day = Date()
+    var name: String
+    var calories: Int
+    
+    
+    //FIXME: still don't understand initializers :-/
+    init?(name: String, calories: Int) {
+        return nil
     }
-    
 }
-
-

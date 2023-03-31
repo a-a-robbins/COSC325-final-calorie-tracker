@@ -9,10 +9,13 @@ import SwiftUI
 
 struct HomeView: View {
     //@EnvironmentObject var todayCalories: DayCalories
-    //let todayCalories = 800
+    @State var todayCalories = 800
+    var totalCalories = 2000
+    var remainingCalories: Int {
+        totalCalories - todayCalories
+    }
     
     var body: some View {
-        let todayCalories = 800
         VStack {
             Text("Awesome Calorie Tracker")
                 .font(.title)
@@ -20,17 +23,22 @@ struct HomeView: View {
             Spacer()
             Text("Today's Calories")
                 .padding()
-            Text("800")
+            Text("\(todayCalories)")
                 .padding()
                 .border(.blue)
             Spacer()
             Text("Calories Remaining")
-            Text("1200")
+            Text("\(remainingCalories)")
                 .padding()
                 .border(.blue)
             Spacer()
-            Image(systemName:("plus.circle"))
-            Text("Add Item")
+            Button {
+                todayCalories += 100
+            } label: {
+                Image(systemName:("plus.circle"))
+                Text("Add Item")
+            }
+            
         }
         .font(.title2)
         .foregroundColor(.blue)
