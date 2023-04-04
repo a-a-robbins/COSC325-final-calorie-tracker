@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
-    //@EnvironmentObject var todayCalories: DayCalories
-    @State var todayCalories = 800
+    @EnvironmentObject var todayCalories: DayCalories
+    //@State var todayCalories = 800
     var totalCalories = 2000
     var remainingCalories: Int {
-        totalCalories - todayCalories
+        totalCalories - todayCalories.calories
     }
     
     var body: some View {
@@ -23,7 +23,7 @@ struct HomeView: View {
             Spacer()
             Text("Today's Calories")
                 .padding()
-            Text("\(todayCalories)")
+            Text("\(todayCalories.calories)")
                 .padding()
                 .border(.blue)
             Spacer()
@@ -33,7 +33,8 @@ struct HomeView: View {
                 .border(.blue)
             Spacer()
             Button {
-                todayCalories += 100
+                //add a food item to the list
+                todayCalories.addFoodItem(FoodItem(name: "apple", calories: 100))
             } label: {
                 Image(systemName:("plus.circle"))
                 Text("Add Item")
@@ -48,5 +49,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(DayCalories())
+            .environmentObject(FoodList())
     }
 }

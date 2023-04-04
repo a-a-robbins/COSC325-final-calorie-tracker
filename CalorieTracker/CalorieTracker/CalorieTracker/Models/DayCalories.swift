@@ -12,12 +12,16 @@ class DayCalories: ObservableObject {
     
     let id = UUID()
     let day = Date()
-    var name: String
-    var calories: Int
-    
-    
-    //FIXME: still don't understand initializers :-/
-    init?(name: String, calories: Int) {
-        return nil
+    var calories: Int {
+        var total = 0
+        for item in dayCalories {
+            total += item.calories
+        }
+        return total
     }
+    
+    func addFoodItem(_ item: FoodItem) {
+        dayCalories.append(item)
+    }
+
 }
