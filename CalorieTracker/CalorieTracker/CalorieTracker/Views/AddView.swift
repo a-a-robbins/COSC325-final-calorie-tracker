@@ -11,25 +11,74 @@ struct AddView: View {
     @EnvironmentObject var foodList: FoodList
     
     var body: some View {
-        VStack {
+        ScrollView {
             Text("Add Food")
                 .font(.largeTitle)
             Text("Choose your food from the following options: ")
                 .padding(.top)
             Divider()
             VStack(alignment: .leading) {
-                Text("Apple, medium, 100 cal")
-                    .padding()
-                Text("Broccoli, 1 cup, 50 cal")
-                    .padding()
-                Text("Cheese, 1 oz, 100 cal")
-                    .padding()
-                Text("Egg, 1 large, 70 cal")
-                    .padding()
-                Text("French Fries, 1/2 cup, 200 cal")
-                    .padding()
-                Text("Jam (Grape), 1 Tbsp, 70 cal")
-                    .padding()
+                HStack {
+                    Text("Apple, medium, 100 cal")
+                        .padding()
+                    Spacer()
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "plus.circle")
+                    }
+                }
+                
+                HStack {
+                    Text("Broccoli, 1 cup, 50 cal")
+                        .padding()
+                    Spacer()
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "plus.circle")
+                    }
+                }
+                HStack {
+                    Text("Cheese, 1 oz, 100 cal")
+                        .padding()
+                    Spacer()
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "plus.circle")
+                    }
+                }
+                HStack {
+                    Text("Egg, 1 large, 70 cal")
+                        .padding()
+                    Spacer()
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "plus.circle")
+                    }
+                }
+                HStack {
+                    Text("French Fries, 1/2 cup, 200 cal")
+                        .padding()
+                    Spacer()
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "plus.circle")
+                    }
+                }
+                HStack {
+                    Text("Jam (Grape), 1 Tbsp, 70 cal")
+                        .padding()
+                    Spacer()
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "plus.circle")
+                    }
+                }
             }
             .padding()
             Spacer()
