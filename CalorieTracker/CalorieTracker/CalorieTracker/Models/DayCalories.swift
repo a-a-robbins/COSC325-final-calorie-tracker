@@ -23,5 +23,12 @@ class DayCalories: ObservableObject {
     func addFoodItem(_ item: FoodItem) {
         dayCalories.append(item)
     }
+    
+//    func getFoodList(_ item: FoodItem) {
+//        ForEach(dayCalories, id: \.self) { food in
+//            
+//        }
+//
+//    }
 
 }

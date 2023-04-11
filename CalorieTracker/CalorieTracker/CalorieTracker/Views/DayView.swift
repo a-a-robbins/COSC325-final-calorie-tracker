@@ -17,16 +17,18 @@ struct DayView: View {
             Text("Food eaten today: ")
                 .padding(.top)
             Divider()
-            VStack {
-                Text("Oatmeal, 1 cup, 200 cal")
-                Text("Apple, 1 medium, 100 cal")
+            ForEach(todayCalories.dayCalories, id: \.self) { food in
+                HStack {
+                    Text("\(food.name) \(food.portion) \(food.calories)")
+                }
+                .padding()
             }
-            .padding()
             Spacer()
+            Divider()
             Text("Total calories: \(todayCalories.calories)")
                 .fontWeight(.bold)
+                .padding(.bottom)
         }
-       
     }
 }
 

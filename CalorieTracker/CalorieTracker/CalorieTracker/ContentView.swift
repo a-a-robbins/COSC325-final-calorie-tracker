@@ -8,10 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var foodList: FoodList
+    @EnvironmentObject var todayCalories: DayCalories
+    
     var body: some View {
-        VStack {
+        TabView {
             HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            AddView()
+                .tabItem {
+                    Label("Add Food", systemImage: "plus.circle")
+                }
+            DayView()
+                .tabItem {
+                    Label("Today's Diary", systemImage: "eye")
+                }
         }
+        Spacer()
         .padding()
     }
 }
@@ -19,5 +34,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(FoodList())
+            .environmentObject(DayCalories())
     }
 }

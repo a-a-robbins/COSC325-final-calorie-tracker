@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddView: View {
     @EnvironmentObject var foodList: FoodList
+    @EnvironmentObject var dayCalories: DayCalories
     
     var body: some View {
         ScrollView {
@@ -16,74 +17,22 @@ struct AddView: View {
                 .font(.largeTitle)
             Text("Choose your food from the following options: ")
                 .padding(.top)
-            Divider()
-            VStack(alignment: .leading) {
-                HStack {
-                    Text("Apple, medium, 100 cal")
-                        .padding()
-                    Spacer()
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "plus.circle")
-                    }
-                }
-                
-                HStack {
-                    Text("Broccoli, 1 cup, 50 cal")
-                        .padding()
-                    Spacer()
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "plus.circle")
-                    }
-                }
-                HStack {
-                    Text("Cheese, 1 oz, 100 cal")
-                        .padding()
-                    Spacer()
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "plus.circle")
-                    }
-                }
-                HStack {
-                    Text("Egg, 1 large, 70 cal")
-                        .padding()
-                    Spacer()
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "plus.circle")
-                    }
-                }
-                HStack {
-                    Text("French Fries, 1/2 cup, 200 cal")
-                        .padding()
-                    Spacer()
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "plus.circle")
-                    }
-                }
-                HStack {
-                    Text("Jam (Grape), 1 Tbsp, 70 cal")
-                        .padding()
-                    Spacer()
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "plus.circle")
-                    }
-                }
-            }
-            .padding()
             Spacer()
-            
-            //List(content: foodList.createList())
+            Divider()
+                ForEach(foodList.foods, id: \.self) { food in
+                    HStack {
+                        Text("\(food.name) \(food.portion) \(food.calories)")
+                            .padding()
+                        Spacer()
+                        Button {
+                            dayCalories.addFoodItem(FoodItem(name: food.name, portion: food.portion, calories: food.calories))
+    
+                        } label: {
+                            Image(systemName: "plus.circle")
+                        }
+                    }
+                    .padding()
+            }
         }
     }
 }

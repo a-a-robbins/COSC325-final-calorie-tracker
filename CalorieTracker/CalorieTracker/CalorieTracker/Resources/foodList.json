@@ -1,0 +1,42 @@
+[
+    {
+        “name”: “Apple”, 
+        “portion”: “1 medium”, 
+        “calories”: 100
+    }, 
+    {	
+        “name”: “Broccoli”,
+        “portion”: “1 cup”, 
+        “calories”: 50
+    },
+    {	
+        “name”: “Cheese”,
+        “portion”: “1 oz”, 
+        “calories”: 100
+    },
+    {	
+        “name”: “Chicken”,
+        “portion”: “4 oz”, 
+        “calories”: 200
+    },
+    {	
+        “name”: “Enchilada”,
+        “portion”: “1 serving”, 
+        “calories”: 500
+    },
+    {	
+        “name”: “Egg”,
+        “portion”: “1 large”, 
+        “calories”: 70
+    },
+    {	
+        “name”: “French Fries”,
+        “portion”: “1/2 cup”, 
+        “calories”: 200
+    },
+    {	
+        “name”: “Jam (Grape)”,
+        “portion”: “1 Tbsp”, 
+        “calories”: 100
+    }
+]

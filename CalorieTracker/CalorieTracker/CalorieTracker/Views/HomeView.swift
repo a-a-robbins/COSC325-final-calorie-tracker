@@ -9,7 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var todayCalories: DayCalories
-    //@State var todayCalories = 800
+    @State private var showingAddItem = false
+
     var totalCalories = 2000
     var remainingCalories: Int {
         totalCalories - todayCalories.calories
@@ -18,31 +19,29 @@ struct HomeView: View {
     var body: some View {
         VStack {
             Text("Awesome Calorie Tracker")
-                .font(.title)
-                .bold()
+                .font(.largeTitle)
+                .foregroundColor(.blue)
+            Divider()
             Spacer()
-            Text("Today's Calories")
-                .padding()
-            Text("\(todayCalories.calories)")
-                .padding()
-                .border(.blue)
-            Spacer()
-            Text("Calories Remaining")
-            Text("\(remainingCalories)")
-                .padding()
-                .border(.blue)
-            Spacer()
-            Button {
-                //add a food item to the list
-                todayCalories.addFoodItem(FoodItem(name: "apple", calories: 100))
-            } label: {
-                Image(systemName:("plus.circle"))
-                Text("Add Item")
+            HStack {
+                Text("Today's Calories")
+                Text("\(todayCalories.calories)")
+                    .padding()
+                    .foregroundColor(.blue)
             }
+            .font(.title)
+            Spacer()
+            HStack {
+                Text("Calories Remaining")
+                Text("\(remainingCalories)")
+                    .padding()
+                    .foregroundColor(.blue)
+            }
+            .font(.title)
+            Spacer()
             
         }
         .font(.title2)
-        .foregroundColor(.blue)
     }
 }
 
