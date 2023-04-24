@@ -5,9 +5,16 @@
 //  Created by ARobbins on 4/24/23.
 //
 
+//  based on SwiftUI Apprentice code
+
 import Foundation
 
-var foods: [JsonFoodList] = load("FoodList.json")
+class ModelData: ObservableObject {
+    @Published var foods: [FoodItem] = load("foodList.json")
+
+    
+
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
@@ -31,3 +38,4 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
     
 }
+

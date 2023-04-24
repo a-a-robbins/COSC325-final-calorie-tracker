@@ -11,8 +11,8 @@ import SwiftUI
 
 struct FoodItem: Hashable, Codable {
     
+    var id: Int
     var name: String
-    var portion: String
+    var serving_size: String
     var calories: Int
-    
 }

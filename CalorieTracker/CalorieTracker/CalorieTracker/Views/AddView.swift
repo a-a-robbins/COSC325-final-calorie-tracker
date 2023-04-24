@@ -21,11 +21,12 @@ struct AddView: View {
             Divider()
                 ForEach(foodList.foods, id: \.self) { food in
                     HStack {
-                        Text("\(food.name) \(food.portion) \(food.calories)")
-                            .padding()
+                        
+//                        Text("\(food.name) \(food.portion) \(food.calories)")
+//                            .padding()
                         Spacer()
                         Button {
-                            dayCalories.addFoodItem(FoodItem(name: food.name, portion: food.portion, calories: food.calories))
+//                            dayCalories.addFoodItem(FoodItem(name: food.name, portion: food.portion, calories: food.calories))
     
                         } label: {
                             Image(systemName: "plus.circle")

@@ -21,7 +21,7 @@ struct DayView: View {
                 VStack {
                     ForEach(todayCalories.dayCalories, id: \.self) { food in
                         HStack {
-                            Text("\(food.name) \(food.portion) \(food.calories)")
+//                            Text("\(food.name) \(food.portion) \(food.calories)")
                         }
                         .padding()
                     }

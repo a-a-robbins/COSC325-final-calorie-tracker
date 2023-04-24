@@ -10,6 +10,6 @@ import Foundation
 struct JsonFoodList: Hashable, Codable {
     var id: Int
     var name: String
-    var serving: String
+    var serving_size: String
     var calories: Int
 }
