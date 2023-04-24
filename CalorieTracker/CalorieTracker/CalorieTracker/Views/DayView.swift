@@ -17,17 +17,22 @@ struct DayView: View {
             Text("Food eaten today: ")
                 .padding(.top)
             Divider()
-            ForEach(todayCalories.dayCalories, id: \.self) { food in
-                HStack {
-                    Text("\(food.name) \(food.portion) \(food.calories)")
+            ScrollView(.vertical, showsIndicators: true) {
+                VStack {
+                    ForEach(todayCalories.dayCalories, id: \.self) { food in
+                        HStack {
+                            Text("\(food.name) \(food.portion) \(food.calories)")
+                        }
+                        .padding()
+                    }
                 }
-                .padding()
             }
             Spacer()
             Divider()
             Text("Total calories: \(todayCalories.calories)")
                 .fontWeight(.bold)
                 .padding(.bottom)
+            Spacer()
         }
     }
 }

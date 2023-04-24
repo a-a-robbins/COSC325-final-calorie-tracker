@@ -10,7 +10,8 @@
 		4929764029D36AC6009D8018 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929763F29D36AC6009D8018 /* HomeView.swift */; };
 		4929764229D36DE5009D8018 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929764129D36DE5009D8018 /* DayView.swift */; };
 		4929764429D36DF8009D8018 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929764329D36DF8009D8018 /* AddView.swift */; };
-		493E496329DC87D70057E2FA /* foodList.json in Resources */ = {isa = PBXBuildFile; fileRef = 493E496229DC87D70057E2FA /* foodList.json */; };
+		49A1F5D929F6D30B00BDBFFC /* JsonFoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1F5D829F6D30B00BDBFFC /* JsonFoodList.swift */; };
+		49A1F5DB29F6D3E500BDBFFC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1F5DA29F6D3E500BDBFFC /* ModelData.swift */; };
 		49B776D829D74030008BB657 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B776D729D74030008BB657 /* FoodList.swift */; };
 		49B776DA29D74040008BB657 /* DayCalories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B776D929D74040008BB657 /* DayCalories.swift */; };
 		49B776DC29D7409C008BB657 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B776DB29D7409C008BB657 /* FoodItem.swift */; };
@@ -21,24 +22,30 @@
 		49D2470629D3698700EFA156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D2470529D3698700EFA156 /* Assets.xcassets */; };
 		49D2470929D3698700EFA156 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D2470829D3698700EFA156 /* Preview Assets.xcassets */; };
 		49DBE51B29DDC75800873567 /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DBE51A29DDC75700873567 /* FoodRow.swift */; };
+		49FCA44029F2E57B00EC3411 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FCA43F29F2E57B00EC3411 /* TestView.swift */; };
+		49FCA44229F2E75B00EC3411 /* FoodList.json in Resources */ = {isa = PBXBuildFile; fileRef = 49FCA44129F2E75B00EC3411 /* FoodList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4929763F29D36AC6009D8018 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4929764129D36DE5009D8018 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		4929764329D36DF8009D8018 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
-		493E496229DC87D70057E2FA /* foodList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodList.json; sourceTree = "<group>"; };
+		49A1F5D829F6D30B00BDBFFC /* JsonFoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFoodList.swift; sourceTree = "<group>"; };
+		49A1F5DA29F6D3E500BDBFFC /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		49B776D729D74030008BB657 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
 		49B776D929D74040008BB657 /* DayCalories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalories.swift; sourceTree = "<group>"; };
 		49B776DB29D7409C008BB657 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		49C74F3E29EEEAAC00ED1D1C /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		49C74F4029EEEC2100ED1D1C /* TabViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBackground.swift; sourceTree = "<group>"; };
+		49C74F4229F03C1200ED1D1C /* Features-Ideas.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Features-Ideas.md"; sourceTree = "<group>"; };
 		49D246FE29D3698600EFA156 /* CalorieTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D2470129D3698600EFA156 /* CalorieTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTrackerApp.swift; sourceTree = "<group>"; };
 		49D2470329D3698600EFA156 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49D2470529D3698700EFA156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49D2470829D3698700EFA156 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49DBE51A29DDC75700873567 /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
+		49FCA43F29F2E57B00EC3411 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		49FCA44129F2E75B00EC3411 /* FoodList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FoodList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 				49DBE51A29DDC75700873567 /* FoodRow.swift */,
 				49C74F3E29EEEAAC00ED1D1C /* GradientBackground.swift */,
 				49C74F4029EEEC2100ED1D1C /* TabViewBackground.swift */,
+				49FCA43F29F2E57B00EC3411 /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -71,6 +79,8 @@
 				49B776D729D74030008BB657 /* FoodList.swift */,
 				49B776D929D74040008BB657 /* DayCalories.swift */,
 				49B776DB29D7409C008BB657 /* FoodItem.swift */,
+				49A1F5D829F6D30B00BDBFFC /* JsonFoodList.swift */,
+				49A1F5DA29F6D3E500BDBFFC /* ModelData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,6 +111,7 @@
 				49D2470329D3698600EFA156 /* ContentView.swift */,
 				49D2470529D3698700EFA156 /* Assets.xcassets */,
 				49D2470729D3698700EFA156 /* Preview Content */,
+				49C74F4229F03C1200ED1D1C /* Features-Ideas.md */,
 			);
 			path = CalorieTracker;
 			sourceTree = "<group>";
@@ -116,7 +127,7 @@
 		49FD8D0C29DC773400E20482 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				493E496229DC87D70057E2FA /* foodList.json */,
+				49FCA44129F2E75B00EC3411 /* FoodList.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -180,7 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D2470929D3698700EFA156 /* Preview Assets.xcassets in Resources */,
-				493E496329DC87D70057E2FA /* foodList.json in Resources */,
+				49FCA44229F2E75B00EC3411 /* FoodList.json in Resources */,
 				49D2470629D3698700EFA156 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FCA44029F2E57B00EC3411 /* TestView.swift in Sources */,
 				49DBE51B29DDC75800873567 /* FoodRow.swift in Sources */,
 				49B776DC29D7409C008BB657 /* FoodItem.swift in Sources */,
 				4929764029D36AC6009D8018 /* HomeView.swift in Sources */,
@@ -200,9 +212,11 @@
 				49B776DA29D74040008BB657 /* DayCalories.swift in Sources */,
 				49C74F3F29EEEAAC00ED1D1C /* GradientBackground.swift in Sources */,
 				4929764429D36DF8009D8018 /* AddView.swift in Sources */,
+				49A1F5D929F6D30B00BDBFFC /* JsonFoodList.swift in Sources */,
 				49B776D829D74030008BB657 /* FoodList.swift in Sources */,
 				49D2470429D3698600EFA156 /* ContentView.swift in Sources */,
 				49D2470229D3698600EFA156 /* CalorieTrackerApp.swift in Sources */,
+				49A1F5DB29F6D3E500BDBFFC /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

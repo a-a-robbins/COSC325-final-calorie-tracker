@@ -14,19 +14,6 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             GradientBackground()
-            
-            //setting tabView background
-            //courtesy: https://www.bigmountainstudio.com/community/public/posts/86559-how-do-i-customize-the-tabview-in-swiftui
-            
-            VStack {
-                Spacer()
-                
-                Color.blue
-                    .frame(height: 100)
-            }
-            .ignoresSafeArea(edges: .bottom)
-            //end Big Mountain Studio code
-            
             TabView {
                 HomeView()
                     .tabItem {
@@ -41,13 +28,9 @@ struct ContentView: View {
                         Label("Today's Diary", systemImage: "eye")
                     }
             }
-            .toolbarBackground(.blue, for: .tabBar)
+//                .toolbarBackground(.blue, for: .tabBar)
         }
-        .opacity(0.75)
-
-            
-        Spacer()
-        .padding()
+            .opacity(0.75)
     }
 }
 
