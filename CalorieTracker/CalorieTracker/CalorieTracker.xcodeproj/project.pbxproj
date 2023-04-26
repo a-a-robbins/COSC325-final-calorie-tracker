@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49179DBB29F977DD000AC7EB /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49179DBA29F977DD000AC7EB /* FoodList.swift */; };
 		4929764029D36AC6009D8018 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929763F29D36AC6009D8018 /* HomeView.swift */; };
 		4929764229D36DE5009D8018 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929764129D36DE5009D8018 /* DayView.swift */; };
 		4929764429D36DF8009D8018 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929764329D36DF8009D8018 /* AddView.swift */; };
@@ -15,8 +16,6 @@
 		49B776DA29D74040008BB657 /* DayCalories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B776D929D74040008BB657 /* DayCalories.swift */; };
 		49B776DC29D7409C008BB657 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B776DB29D7409C008BB657 /* FoodItem.swift */; };
 		49BCAD7E29F6DE8B00754836 /* foodList.json in Resources */ = {isa = PBXBuildFile; fileRef = 49BCAD7D29F6DE8B00754836 /* foodList.json */; };
-		49BCAD8229F6E0A800754836 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCAD8129F6E0A800754836 /* FoodList.swift */; };
-		49BCAD8429F6E0F300754836 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCAD8329F6E0F300754836 /* FoodListView.swift */; };
 		49C74F3F29EEEAAC00ED1D1C /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C74F3E29EEEAAC00ED1D1C /* GradientBackground.swift */; };
 		49C74F4129EEEC2100ED1D1C /* TabViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C74F4029EEEC2100ED1D1C /* TabViewBackground.swift */; };
 		49D2470229D3698600EFA156 /* CalorieTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2470129D3698600EFA156 /* CalorieTrackerApp.swift */; };
@@ -28,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49179DBA29F977DD000AC7EB /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
 		4929763F29D36AC6009D8018 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4929764129D36DE5009D8018 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		4929764329D36DF8009D8018 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
@@ -36,8 +36,6 @@
 		49B776D929D74040008BB657 /* DayCalories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalories.swift; sourceTree = "<group>"; };
 		49B776DB29D7409C008BB657 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		49BCAD7D29F6DE8B00754836 /* foodList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodList.json; sourceTree = "<group>"; };
-		49BCAD8129F6E0A800754836 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
-		49BCAD8329F6E0F300754836 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
 		49C74F3E29EEEAAC00ED1D1C /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		49C74F4029EEEC2100ED1D1C /* TabViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBackground.swift; sourceTree = "<group>"; };
 		49C74F4229F03C1200ED1D1C /* Features-Ideas.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Features-Ideas.md"; sourceTree = "<group>"; };
@@ -71,7 +69,7 @@
 				49C74F3E29EEEAAC00ED1D1C /* GradientBackground.swift */,
 				49C74F4029EEEC2100ED1D1C /* TabViewBackground.swift */,
 				49FCA43F29F2E57B00EC3411 /* TestView.swift */,
-				49BCAD8329F6E0F300754836 /* FoodListView.swift */,
+				49179DBA29F977DD000AC7EB /* FoodList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -83,7 +81,6 @@
 				49B776DB29D7409C008BB657 /* FoodItem.swift */,
 				49A1F5D829F6D30B00BDBFFC /* JsonFoodList.swift */,
 				49A1F5DA29F6D3E500BDBFFC /* ModelData.swift */,
-				49BCAD8129F6E0A800754836 /* FoodList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,7 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49BCAD8429F6E0F300754836 /* FoodListView.swift in Sources */,
 				49FCA44029F2E57B00EC3411 /* TestView.swift in Sources */,
 				49DBE51B29DDC75800873567 /* FoodRow.swift in Sources */,
 				49B776DC29D7409C008BB657 /* FoodItem.swift in Sources */,
@@ -215,7 +211,7 @@
 				4929764229D36DE5009D8018 /* DayView.swift in Sources */,
 				49B776DA29D74040008BB657 /* DayCalories.swift in Sources */,
 				49C74F3F29EEEAAC00ED1D1C /* GradientBackground.swift in Sources */,
-				49BCAD8229F6E0A800754836 /* FoodList.swift in Sources */,
+				49179DBB29F977DD000AC7EB /* FoodList.swift in Sources */,
 				4929764429D36DF8009D8018 /* AddView.swift in Sources */,
 				49A1F5D929F6D30B00BDBFFC /* JsonFoodList.swift in Sources */,
 				49D2470429D3698600EFA156 /* ContentView.swift in Sources */,

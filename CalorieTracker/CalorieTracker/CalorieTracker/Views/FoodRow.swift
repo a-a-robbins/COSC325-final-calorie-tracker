@@ -27,8 +27,6 @@ struct FoodRow_Previews: PreviewProvider {
         VStack {
             FoodRow(food: foods[0])
             FoodRow(food: foods[1])
-            FoodRow(food: foods[2])
-
         }
         
     }

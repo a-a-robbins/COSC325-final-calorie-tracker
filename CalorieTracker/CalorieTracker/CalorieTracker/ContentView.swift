@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var foodList: FoodList
+//    @EnvironmentObject var foodList: FoodList
     @EnvironmentObject var todayCalories: DayCalories
     
     var body: some View {
@@ -37,7 +37,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(FoodList())
+//            .environmentObject(FoodList())
             .environmentObject(DayCalories())
     }
 }

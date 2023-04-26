@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AddView: View {
-    @EnvironmentObject var foodList: FoodList
     @EnvironmentObject var dayCalories: DayCalories
     
     var body: some View {
@@ -19,7 +18,7 @@ struct AddView: View {
                 .padding(.top)
             Spacer()
             Divider()
-                ForEach(foodList.foods, id: \.self) { food in
+//                ForEach(foodList.foods, id: \.self) { food in
                     HStack {
                         
 //                        Text("\(food.name) \(food.portion) \(food.calories)")
@@ -36,11 +35,11 @@ struct AddView: View {
             }
         }
     }
-}
+//}
 
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {
         AddView()
-            .environmentObject(FoodList())
+//            .environmentObject(FoodList())
     }
 }

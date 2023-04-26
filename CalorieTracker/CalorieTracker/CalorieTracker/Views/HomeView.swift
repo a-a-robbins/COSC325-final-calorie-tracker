@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+//    @EnvironmentObject var foods: FoodList
     @EnvironmentObject var todayCalories: DayCalories
     @State private var showingAddItem = false
 
@@ -49,6 +50,6 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
             .environmentObject(DayCalories())
-            .environmentObject(FoodList())
+//            .environmentObject(FoodList())
     }
 }
