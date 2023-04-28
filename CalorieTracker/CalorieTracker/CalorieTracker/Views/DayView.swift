@@ -18,10 +18,10 @@ struct DayView: View {
                 .padding(.top)
             Divider()
             ScrollView(.vertical, showsIndicators: true) {
-                VStack {
+                VStack(alignment: .leading) {
                     ForEach(todayCalories.dayCalories, id: \.self) { food in
                         HStack {
-//                            Text("\(food.name) \(food.portion) \(food.calories)")
+                            Text("\(food.name) \(food.serving_size) \(food.calories)")
                         }
                         .padding()
                     }

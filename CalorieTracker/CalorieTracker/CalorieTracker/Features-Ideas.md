@@ -1,5 +1,7 @@
 #  Features & Ideas
 
+NEED TO VERIFY: AddFood still works in simulator and ContentView preview
+
 ## FUNCTIONALITY
 
     ~~ add ability to search for a food
@@ -7,7 +9,7 @@
     ~~ expand food database --- connect to an actual dbase or spreadsheet? 
     
     ### section 6: setup navigation between list and detail
-        > need to add "protein", "fat", "carbs" to foodList.json
+        ~~ need to add "protein", "fat", "carbs" to foodList.json ~~
             * could have AddView be the list to sort and then it links to 
             a page with nutrition info and ability to put in number of servings
     
