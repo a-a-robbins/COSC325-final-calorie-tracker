@@ -28,7 +28,8 @@ struct ContentView: View {
                         Label("Today's Diary", systemImage: "eye")
                     }
             }
-//                .toolbarBackground(.blue, for: .tabBar)
+//            .toolbarBackground(.yellow, for: .tabBar)
+            
         }
             .opacity(0.75)
     }

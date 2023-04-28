@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		49179DBB29F977DD000AC7EB /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49179DBA29F977DD000AC7EB /* FoodList.swift */; };
+		49179DBD29FB1CAA000AC7EB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49179DBC29FB1CAA000AC7EB /* SearchView.swift */; };
+		49179DBF29FB2729000AC7EB /* SearchFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49179DBE29FB2729000AC7EB /* SearchFoodView.swift */; };
+		49179DC129FB2943000AC7EB /* SingleFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49179DC029FB2943000AC7EB /* SingleFoodView.swift */; };
 		4929764029D36AC6009D8018 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929763F29D36AC6009D8018 /* HomeView.swift */; };
 		4929764229D36DE5009D8018 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929764129D36DE5009D8018 /* DayView.swift */; };
 		4929764429D36DF8009D8018 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929764329D36DF8009D8018 /* AddView.swift */; };
-		49A1F5D929F6D30B00BDBFFC /* JsonFoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1F5D829F6D30B00BDBFFC /* JsonFoodList.swift */; };
 		49A1F5DB29F6D3E500BDBFFC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1F5DA29F6D3E500BDBFFC /* ModelData.swift */; };
 		49B776DA29D74040008BB657 /* DayCalories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B776D929D74040008BB657 /* DayCalories.swift */; };
 		49B776DC29D7409C008BB657 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B776DB29D7409C008BB657 /* FoodItem.swift */; };
@@ -28,10 +30,13 @@
 
 /* Begin PBXFileReference section */
 		49179DBA29F977DD000AC7EB /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
+		49179DBC29FB1CAA000AC7EB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		49179DBE29FB2729000AC7EB /* SearchFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFoodView.swift; sourceTree = "<group>"; };
+		49179DC029FB2943000AC7EB /* SingleFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFoodView.swift; sourceTree = "<group>"; };
+		49179DC229FB3B04000AC7EB /* HELP!!.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "HELP!!.md"; sourceTree = "<group>"; };
 		4929763F29D36AC6009D8018 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4929764129D36DE5009D8018 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		4929764329D36DF8009D8018 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
-		49A1F5D829F6D30B00BDBFFC /* JsonFoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFoodList.swift; sourceTree = "<group>"; };
 		49A1F5DA29F6D3E500BDBFFC /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		49B776D929D74040008BB657 /* DayCalories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalories.swift; sourceTree = "<group>"; };
 		49B776DB29D7409C008BB657 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
@@ -70,6 +75,9 @@
 				49C74F4029EEEC2100ED1D1C /* TabViewBackground.swift */,
 				49FCA43F29F2E57B00EC3411 /* TestView.swift */,
 				49179DBA29F977DD000AC7EB /* FoodList.swift */,
+				49179DBC29FB1CAA000AC7EB /* SearchView.swift */,
+				49179DBE29FB2729000AC7EB /* SearchFoodView.swift */,
+				49179DC029FB2943000AC7EB /* SingleFoodView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -79,7 +87,6 @@
 			children = (
 				49B776D929D74040008BB657 /* DayCalories.swift */,
 				49B776DB29D7409C008BB657 /* FoodItem.swift */,
-				49A1F5D829F6D30B00BDBFFC /* JsonFoodList.swift */,
 				49A1F5DA29F6D3E500BDBFFC /* ModelData.swift */,
 			);
 			path = Models;
@@ -112,6 +119,7 @@
 				49D2470529D3698700EFA156 /* Assets.xcassets */,
 				49D2470729D3698700EFA156 /* Preview Content */,
 				49C74F4229F03C1200ED1D1C /* Features-Ideas.md */,
+				49179DC229FB3B04000AC7EB /* HELP!!.md */,
 			);
 			path = CalorieTracker;
 			sourceTree = "<group>";
@@ -207,16 +215,18 @@
 				49DBE51B29DDC75800873567 /* FoodRow.swift in Sources */,
 				49B776DC29D7409C008BB657 /* FoodItem.swift in Sources */,
 				4929764029D36AC6009D8018 /* HomeView.swift in Sources */,
+				49179DC129FB2943000AC7EB /* SingleFoodView.swift in Sources */,
 				49C74F4129EEEC2100ED1D1C /* TabViewBackground.swift in Sources */,
 				4929764229D36DE5009D8018 /* DayView.swift in Sources */,
 				49B776DA29D74040008BB657 /* DayCalories.swift in Sources */,
 				49C74F3F29EEEAAC00ED1D1C /* GradientBackground.swift in Sources */,
 				49179DBB29F977DD000AC7EB /* FoodList.swift in Sources */,
 				4929764429D36DF8009D8018 /* AddView.swift in Sources */,
-				49A1F5D929F6D30B00BDBFFC /* JsonFoodList.swift in Sources */,
+				49179DBD29FB1CAA000AC7EB /* SearchView.swift in Sources */,
 				49D2470429D3698600EFA156 /* ContentView.swift in Sources */,
 				49D2470229D3698600EFA156 /* CalorieTrackerApp.swift in Sources */,
 				49A1F5DB29F6D3E500BDBFFC /* ModelData.swift in Sources */,
+				49179DBF29FB2729000AC7EB /* SearchFoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

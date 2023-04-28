@@ -8,16 +8,39 @@
 import SwiftUI
 
 struct FoodList: View {
+    @EnvironmentObject var dayCalories: DayCalories
+    @State private var searchText = ""
+
+    let foods = ModelData().foods
+
     var body: some View {
-        let foods = ModelData().foods
-        
-        List(foods, id: \.id) { food in
-            FoodRow(food: food)
+
+        List(searchResults) { food in
+            HStack {
+                FoodRow(food: food)
+                Spacer()
+                Button {
+                    dayCalories.addFoodItem(food)
+                 } label: {
+                     Image(systemName: "plus.circle")
+                 }
+                }
+            }
+        .searchable(text: $searchText, placement: .automatic)
+        }
+    
+    var searchResults: [FoodItem] {
+        if searchText.isEmpty {
+            return foods
+        } else {
+            return foods.filter({ $0.name.contains(searchText) })
         }
     }
 }
 
 struct FoodList_Previews: PreviewProvider {
+    let foods = ModelData().foods
+
     static var previews: some View {
         FoodList()
     }
