@@ -33,8 +33,6 @@ struct AddView: View {
                        .padding()
         }
     }
-    
-
 }
 
 struct AddView_Previews: PreviewProvider {

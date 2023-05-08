@@ -48,12 +48,6 @@ struct SingleFoodView: View {
             .font(.title3)
             
             Spacer()
-            //make add food a separate button that
-            //that then binds to dayview and adds the
-            //proper amount of food from counter
-            
-            
-            Spacer()
         }
         
         

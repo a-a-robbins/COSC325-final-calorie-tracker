@@ -33,21 +33,11 @@ struct FoodDetailView: View {
                         }
                     }
                 }
+                .searchable(text: $searchText, placement: .automatic)
             }
+            Divider()
         }
         .navigationTitle("Food Detail")
-        
-        
-//        NavigationView {
-//            VStack {
-//                Text("Food Detail")
-//                    .font(.largeTitle)
-//                    .foregroundColor(.blue)
-//                Text("Choose a food from the following options: ")
-//                    .padding(.top)
-//                Spacer()
-//                Divider()
-//
     }
 
 

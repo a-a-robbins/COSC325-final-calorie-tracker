@@ -25,11 +25,11 @@ struct FoodList: View {
     var body: some View {
         
         NavigationView {
-            List{
+            List {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
                 }
-                ForEach(filteredFoods) {
+                ForEach(searchResults) {
                     food in
                     HStack {
                         FoodRow(food: food)
@@ -40,14 +40,15 @@ struct FoodList: View {
                         }
                     }
                 }
-             
             }
+            .searchable(text: $searchText, placement: .automatic)
         }
+
     }
     
     var searchResults: [FoodItem] {
         if searchText.isEmpty {
-            return modelData.foods
+            return filteredFoods
         } else  {
             return modelData.foods.filter({ $0.name.contains(searchText) })
         }
