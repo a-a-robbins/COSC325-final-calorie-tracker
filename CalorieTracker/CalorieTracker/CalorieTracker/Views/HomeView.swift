@@ -43,7 +43,6 @@ struct HomeView: View {
             .font(.title)
             Spacer()
             Divider()
-            
         }
         .font(.title2)
     }

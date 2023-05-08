@@ -40,6 +40,10 @@ struct SingleFoodView: View {
                     .padding(.bottom)
                 Text("Calories: \(food.calories)")
                     .padding(.bottom)
+                HStack {
+                    Text("Is Favorite:")
+                    FavoriteButton(isSet: $modelData.foods[foodIndex].is_favorite)
+                }
             }
             .font(.title3)
             
@@ -60,6 +64,9 @@ struct SingleFoodView_Previews: PreviewProvider {
     static var foods = ModelData().foods
 
     static var previews: some View {
+
         SingleFoodView(food: foods[0])
+            .environmentObject(ModelData())
+            .environmentObject(DayCalories())
     }
 }

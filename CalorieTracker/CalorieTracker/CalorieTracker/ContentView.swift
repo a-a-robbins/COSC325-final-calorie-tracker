@@ -33,7 +33,7 @@ struct ContentView: View {
                         }
                     
                 }
-//                .toolbarBackground(.white, for: .tabBar)
+                .toolbarBackground(.white, for: .tabBar)
                 .opacity(0.65)
 
             }

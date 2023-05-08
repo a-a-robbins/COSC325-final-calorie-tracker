@@ -24,15 +24,12 @@ struct AddView: View {
                    .padding(.top)
                Spacer()
                Divider()
-//               HStack {
-//                   FilteredView()
-//               }
                HStack {
                    FoodList()
                }
                Spacer()
                Divider()
-            }
+           }
                        .padding()
         }
     }

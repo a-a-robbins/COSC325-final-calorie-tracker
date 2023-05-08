@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		49179DBB29F977DD000AC7EB /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49179DBA29F977DD000AC7EB /* FoodList.swift */; };
-		49179DBD29FB1CAA000AC7EB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49179DBC29FB1CAA000AC7EB /* SearchView.swift */; };
 		49179DC129FB2943000AC7EB /* SingleFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49179DC029FB2943000AC7EB /* SingleFoodView.swift */; };
 		4929764029D36AC6009D8018 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929763F29D36AC6009D8018 /* HomeView.swift */; };
 		4929764229D36DE5009D8018 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929764129D36DE5009D8018 /* DayView.swift */; };
@@ -20,7 +19,6 @@
 		49B776DA29D74040008BB657 /* DayCalories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B776D929D74040008BB657 /* DayCalories.swift */; };
 		49B776DC29D7409C008BB657 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B776DB29D7409C008BB657 /* FoodItem.swift */; };
 		49B9CE832A01644E0080B8E6 /* healthy-foods.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 49B9CE822A01644E0080B8E6 /* healthy-foods.jpeg */; };
-		49B9CE852A0166AC0080B8E6 /* HomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B9CE842A0166AC0080B8E6 /* HomeImageView.swift */; };
 		49BCAD7E29F6DE8B00754836 /* foodList.json in Resources */ = {isa = PBXBuildFile; fileRef = 49BCAD7D29F6DE8B00754836 /* foodList.json */; };
 		49C74F3F29EEEAAC00ED1D1C /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C74F3E29EEEAAC00ED1D1C /* GradientBackground.swift */; };
 		49D2470229D3698600EFA156 /* CalorieTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2470129D3698600EFA156 /* CalorieTrackerApp.swift */; };
@@ -32,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		49179DBA29F977DD000AC7EB /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
-		49179DBC29FB1CAA000AC7EB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		49179DC029FB2943000AC7EB /* SingleFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFoodView.swift; sourceTree = "<group>"; };
 		49179DC229FB3B04000AC7EB /* HELP!!.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "HELP!!.md"; sourceTree = "<group>"; };
 		4929763F29D36AC6009D8018 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -45,7 +42,6 @@
 		49B776D929D74040008BB657 /* DayCalories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalories.swift; sourceTree = "<group>"; };
 		49B776DB29D7409C008BB657 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		49B9CE822A01644E0080B8E6 /* healthy-foods.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "healthy-foods.jpeg"; sourceTree = "<group>"; };
-		49B9CE842A0166AC0080B8E6 /* HomeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeImageView.swift; sourceTree = "<group>"; };
 		49BCAD7D29F6DE8B00754836 /* foodList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodList.json; sourceTree = "<group>"; };
 		49C74F3E29EEEAAC00ED1D1C /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		49C74F4229F03C1200ED1D1C /* Features-Ideas.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Features-Ideas.md"; sourceTree = "<group>"; };
@@ -77,9 +73,7 @@
 				49DBE51A29DDC75700873567 /* FoodRow.swift */,
 				49C74F3E29EEEAAC00ED1D1C /* GradientBackground.swift */,
 				49179DBA29F977DD000AC7EB /* FoodList.swift */,
-				49179DBC29FB1CAA000AC7EB /* SearchView.swift */,
 				49179DC029FB2943000AC7EB /* SingleFoodView.swift */,
-				49B9CE842A0166AC0080B8E6 /* HomeImageView.swift */,
 				496F43012A0589B800071D5B /* FilteredView.swift */,
 				496F43032A058D4200071D5B /* FoodDetailView.swift */,
 			);
@@ -234,11 +228,9 @@
 				4929764229D36DE5009D8018 /* DayView.swift in Sources */,
 				49B776DA29D74040008BB657 /* DayCalories.swift in Sources */,
 				49C74F3F29EEEAAC00ED1D1C /* GradientBackground.swift in Sources */,
-				49B9CE852A0166AC0080B8E6 /* HomeImageView.swift in Sources */,
 				49179DBB29F977DD000AC7EB /* FoodList.swift in Sources */,
 				4929764429D36DF8009D8018 /* AddView.swift in Sources */,
 				496F43022A0589B800071D5B /* FilteredView.swift in Sources */,
-				49179DBD29FB1CAA000AC7EB /* SearchView.swift in Sources */,
 				49D2470429D3698600EFA156 /* ContentView.swift in Sources */,
 				49D2470229D3698600EFA156 /* CalorieTrackerApp.swift in Sources */,
 				496F43062A09156800071D5B /* FavoriteButton.swift in Sources */,

@@ -23,35 +23,27 @@ struct FoodList: View {
     }
 
     var body: some View {
-
-//        if(showFavoritesOnly) {
-//            List(filteredFoods) { food in
-//                HStack {
-//                    FoodRow(food: food)
-//                    Spacer()
-//                    Button {
-//                        dayCalories.addFoodItem(food)
-//                     } label: {
-//                         Image(systemName: "plus.circle")
-//                     }
-//                    }
-//                }
-//            .searchable(text: $searchText, placement: .automatic)
-//        } else {
-            List(searchResults) { food in
-                HStack {
-                    FoodRow(food: food)
-                    Spacer()
-                    Button {
-                        dayCalories.addFoodItem(food)
-                     } label: {
-                         Image(systemName: "plus.circle")
-                     }
+        
+        NavigationView {
+            List{
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites only")
+                }
+                ForEach(filteredFoods) {
+                    food in
+                    HStack {
+                        FoodRow(food: food)
+                        Button {
+                            dayCalories.addFoodItem(food)
+                        } label: {
+                            Image(systemName: "plus.circle")
+                        }
                     }
                 }
-            .searchable(text: $searchText, placement: .automatic)
-//        }
+             
+            }
         }
+    }
     
     var searchResults: [FoodItem] {
         if searchText.isEmpty {
