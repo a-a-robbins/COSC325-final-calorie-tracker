@@ -8,37 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @EnvironmentObject var foodList: FoodList
+    @EnvironmentObject var modelData: ModelData
     @EnvironmentObject var todayCalories: DayCalories
     
     var body: some View {
-        ZStack {
-            GradientBackground()
-            TabView {
-                HomeView()
-                    .tabItem {
-                        Label("Home", systemImage: "house")
-                    }
-                AddView()
-                    .tabItem {
-                        Label("Add Food", systemImage: "plus.circle")
-                    }
-                DayView()
-                    .tabItem {
-                        Label("Today's Diary", systemImage: "eye")
-                    }
+            ZStack {
+                GradientBackground()
+                TabView {
+                    HomeView()
+                        .tabItem {
+                            Label("Home", systemImage: "house")
+                        }
+                    AddView()
+                        .tabItem {
+                            Label("Add Food", systemImage: "plus.circle")
+                        }
+                    FoodDetailView()
+                        .tabItem {
+                            Label("Food Detail", systemImage: "info.circle")
+                        }
+                    DayView()
+                        .tabItem {
+                            Label("Today's Diary", systemImage: "eye")
+                        }
+                    
+                }
+//                .toolbarBackground(.white, for: .tabBar)
+                .opacity(0.65)
+
             }
-//            .toolbarBackground(.yellow, for: .tabBar)
-            
-        }
-            .opacity(0.75)
+
+
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-//            .environmentObject(FoodList())
+            .environmentObject(ModelData())
             .environmentObject(DayCalories())
     }
 }

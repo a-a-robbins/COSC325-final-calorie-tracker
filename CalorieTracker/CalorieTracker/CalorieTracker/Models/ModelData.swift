@@ -11,9 +11,6 @@ import Foundation
 
 class ModelData: ObservableObject {
     @Published var foods: [FoodItem] = load("foodList.json")
-
-    
-
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

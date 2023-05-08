@@ -22,6 +22,7 @@ struct HomeView: View {
             Text("Awesome Calorie Tracker")
                 .font(.largeTitle)
                 .foregroundColor(.blue)
+                .padding(.top)
             Divider()
             Spacer()
             HStack {
@@ -30,6 +31,7 @@ struct HomeView: View {
                     .padding()
                     .foregroundColor(.blue)
             }
+            .background(in: Rectangle())
             .font(.title)
             Spacer()
             HStack {
@@ -40,6 +42,7 @@ struct HomeView: View {
             }
             .font(.title)
             Spacer()
+            Divider()
             
         }
         .font(.title2)

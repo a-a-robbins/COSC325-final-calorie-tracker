@@ -21,4 +21,10 @@ struct FoodItem: Hashable, Codable, Identifiable {
     var carbohydrate: String
     var is_favorite: Bool
     //IF want to do the multiple portions then need to add a "quantity" variable
+    
+//    var data: [FoodItem] = [
+//        .init(type: "Protein", count: Int(data.protein)),
+//        .init(type: "Carb", count: Int(data.carbohydrate)),
+//        .init(type: "Fat", count: Int(data.total_fat))
+//    ]
 }

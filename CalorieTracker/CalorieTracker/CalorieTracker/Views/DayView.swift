@@ -14,25 +14,27 @@ struct DayView: View {
         VStack {
             Text("Diary")
                 .font(.largeTitle)
+                .padding(.top)
+                .foregroundColor(.blue)
             Text("Food eaten today: ")
                 .padding(.top)
-            Divider()
-            ScrollView(.vertical, showsIndicators: true) {
-                VStack(alignment: .leading) {
+            Divider()                
+                List {
                     ForEach(todayCalories.dayCalories, id: \.self) { food in
                         HStack {
-                            Text("\(food.name) \(food.serving_size) \(food.calories)")
+                            Text("\(food.name) \(food.serving_size)")
+                            Spacer()
+                            Text("\(food.calories) calories")
                         }
-                        .padding()
+                        .padding(.top)
                     }
                 }
-            }
             Spacer()
-            Divider()
             Text("Total calories: \(todayCalories.calories)")
                 .fontWeight(.bold)
                 .padding(.bottom)
             Spacer()
+            Divider()
         }
     }
 }
