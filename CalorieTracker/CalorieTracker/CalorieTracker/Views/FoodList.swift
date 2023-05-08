@@ -21,6 +21,7 @@ struct FoodList: View {
             (!showFavoritesOnly || food.is_favorite)
         }
     }
+    
 
     var body: some View {
         
@@ -49,7 +50,9 @@ struct FoodList: View {
     var searchResults: [FoodItem] {
         if searchText.isEmpty {
             return filteredFoods
-        } else  {
+        } else if(showFavoritesOnly) {
+            return filteredFoods.filter({ $0.name.contains(searchText) })
+        }  else {
             return modelData.foods.filter({ $0.name.contains(searchText) })
         }
     }

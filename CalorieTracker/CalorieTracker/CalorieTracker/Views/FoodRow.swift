@@ -12,9 +12,9 @@ struct FoodRow: View {
 
     var food: FoodItem
 
-//    var foodIndex: Int {
-//        modelData.foods.firstIndex(where: { $0.id == food.id })!
-//    }
+    var foodIndex: Int {
+        modelData.foods.firstIndex(where: { $0.id == food.id })!
+    }
 
     
     var body: some View {
@@ -23,12 +23,10 @@ struct FoodRow: View {
             Text(food.serving_size)
             Text("\(food.calories)")
             Spacer()
-//            FavoriteButton(isSet: $modelData.foods[foodIndex].is_favorite)
-            
             if food.is_favorite {
                 Image(systemName: "star.fill")
                     .foregroundColor(.yellow)
-            } 
+            }
         }
     }
 
